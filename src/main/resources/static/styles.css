@@ -1,0 +1,248 @@
+@charset "ISO-8859-1";
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image:
+        linear-gradient(
+             rgba(30, 58, 95, 0.75),
+        rgba(30, 58, 95, 0.75)
+        ),
+        url('/images/background.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+   
+}
+
+
+/* Navbar with background image */
+.navbar {									/* background image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    margin:0;
+    
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px 20px;
+}
+
+/* Navigation size means full screen */
+.nav-container {										
+    width: 100%;
+    height: 100%;
+    padding:0px;
+}
+.symbol {
+    display: flex;
+    align-items: center;
+    
+}
+.symbol-container {
+    background-image: url('/images/logo.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: left;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;  /*makes it circular*/
+    margin-right: 20px;
+}
+
+/* This controls vertical stacking */
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Brand name */
+.brand {										/*Headline of Mai Construction*/
+    font-size: 24px;
+    margin: 0px;
+    
+    
+}
+/* Tagline (IMPORTANT PART) */
+.tagline {
+    margin: 2px 0 0 0;
+    font-size: 16px;
+    color: #ffc107; /* yellow like your reference */
+    font-weight: 500;
+}
+
+/* Navigation links */
+.nav-links {									/* Navigation bar for sub headline*/
+    list-style: none;
+    display: flex;
+    justify-content: right;
+   	margin: 0;
+    padding: 0;
+    gap: 50px;
+}
+.nav-links  a {									/* Sub headline text Styles */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links  a:hover {							/* To translate color of sub headline*/
+    color: #ffc107; /* yellow highlight on hover */
+}
+
+
+
+.welcome-text {
+	font-size: 25px;
+	font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    justify-content: center;
+    text-align:center;
+    color:#92ff24;
+  	opacity: 0;					/*opacity 0 means fully transparant*/
+  	transform: translateY(-15px);/*take text on below style(-15) and (15)above style*/
+  	animation: fadeSlideIn 8s ease-out forwards;	/*to display delay msg*/
+}
+
+@keyframes fadeSlideIn {	/*For displaying animation */
+to {
+    opacity: 1;	/*this to display welcome msg if not give that then not display any msg,opacity 1 means fully visible*/
+    transform: translateY(0);	/*take text on above style..Animate it upwards to its original position with full visibility*/
+}
+}
+.appreciation-text {
+    margin: 0px;
+    text-align:center;
+    justify-content: center;
+  	opacity: 0;
+  	transform: translateY(-15px);/*take text on below style(-15) and (15)above style*/
+  	animation: fadeSlideDown 10s ease-out forwards;	/*to display delay msg*/
+}
+@keyframes fadeSlideDown {	/*For displaying animation */
+  to {
+  	transform: translateY(0);	/*take text on below style..Animate it upwards to its original position with full visibility*/
+    opacity: 1;	/*this to display welcome msg if not give that then not display any msg,opacity 1 means fully visible..Start with the element invisible and slightly below its position*/
+    }
+}
+
+
+
+
+.about-home{
+    text-align:center;
+    padding: 50px 20px;
+    background: rgba(30, 58, 95, 0.7); /* semi-transparent dark blue */
+    color: white; /* text white for contrast */
+    border-radius: 12px; /* thoda round corner, optional */
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.about-home h2{
+    
+    color: #ffc107; /* yellowish highlight */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-home p{
+    max-width:800px;
+    margin:auto;
+    font-size: 18px;
+    color: #e0e0e0; /* light grey for readability */
+}
+
+
+
+
+
+.projects-home{
+    text-align:center;
+    padding: 50px 20px;
+    background: rgba(30, 58, 95, 0.7); /* semi-transparent dark blue */
+    color: white; /* text white for contrast */
+    border-radius: 12px; /* thoda round corner, optional */
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.projects-home h2{
+    color: #ffc107; /* yellowish highlight */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.project-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.project-container img{
+width:250px;
+height:170px;
+object-fit:cover;
+border-radius:8px;
+}
+
+
+
+
+.contact-home{
+    text-align:center;
+    padding: 50px 20px;
+    background: rgba(30, 58, 95, 0.7); /* semi-transparent dark blue */
+    color: white; /* text white for contrast */
+    border-radius: 12px; /* thoda round corner, optional */
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.contact-home h2{
+   color: #ffc107; /* yellowish highlight */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-home p{
+    max-width:800px;
+    margin:auto;
+    font-size: 18px;
+    color: #e0e0e0; /* light grey for readability */
+}
+
+.read-more-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#FFFFFF;
+color:black;
+text-decoration:none;
+border-radius:5px;
+font-weight:200;
+border:2px solid #222;
+}
+
+.read-more-btn:hover{
+background:#1A1A1A;
+color:white;
+border:2px solid #222;
+}
+
+
+
+
+
+    
+   
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Maii construction and Developers</title>
+<link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
+</head>
+<body>
+	<header class="navbar">
+        <div class="nav-container">
+        	<div class="symbol">
+        		<div class="symbol-container"></div>
+        	 		<div class="brand-text">
+				        <h1 class="brand">Maii Construction and Developers</h1>
+				        <p class="tagline">Structural Engineering</p>
+				    </div>
+        	</div>
+        	
+        	
+            <nav>
+                <ul class="nav-links">
+                	<a href="/openAbout">About</a>
+		            <a href="/contact">Contact</a>
+		            <a href="/openProject">Projects</a>
+		            <a href="/openService">Services</a>
+                </ul>
+            </nav>
+          
+    
+
+            <pre>
+    		<h2 class="welcome-text" th:text="${welcomeMessage}">Welcome to Maii Construction and Developers!</h2>
+    		<h3 class="appreciation-text" th:text="${appreciationMessage}">
+    			We appreciate your interest in  Maii Construction and Developers.
+					Your trust means a lot to us, and we are committed 
+						to providing reliable and professional service.
+							Lets build something great together!</h3>
+			</pre>
+			
+		 </div>
+        
+    </header>
+    
+    
+ <!-- About -->  
+<section class="about-home">
+	<h2>About</h2>
+
+    <p>
+        Maii Construction and Developers is a trusted name in civil engineering,
+        structural design and infrastructure development. We specialize in RCC
+        and steel structure design, road construction, drainage systems,
+        retaining walls and civil development works.
+    </p>
+
+    <p>
+        Our focus is on quality construction, safety, modern engineering
+        solutions and timely project completion.
+    </p>
+
+    <a href="/openAbout" class="read-more-btn">Read More</a>
+
+</section>
+
+  <!-- Project -->
+<section class="projects-home">
+
+	<h2>Our Recent Projects</h2>
+	
+	<div class="project-container">
+	
+	<img src="/images/img-010.jpg" alt="Project 1">
+	<img src="/images/img-18.jpg" alt="Project 2">
+	<img src="/images/img-6.jpg" alt="Project 3">
+	<img src="/images/img-023.jpg" alt="Project 4">
+	<img src="/images/img-5.jpg" alt="Project 5">
+	<img src="/images/img-030.jpg" alt="Project 6">
+	
+	</div>
+	
+	<a href="/openProject" class="read-more-btn">View All Projects</a>
+
+</section>
+
+		
+
+<!-- Contact -->
+<section class="contact-home">
+
+<h2>Need Civil Engineering Services?</h2>
+
+<p>Contact us for reliable construction and structural design services.</p>
+
+
+<a href="/contact" class="read-more-btn">Contact Us</a>
+
+</section>		
+    		
+      
+    
+</body>
+</html>

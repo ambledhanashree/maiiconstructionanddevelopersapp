@@ -1,0 +1,96 @@
+@charset "ISO-8859-1";
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.85),
+            rgba(255, 255, 255, 0.85)
+        ),
+        url('/images/background.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.navbar {									/* background image */
+    background-color: #880088;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    
+}
+
+.symbol {
+    display: flex;
+    align-items: center;
+}
+.symbol-container {
+    background-image: url('/images/logo.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: left;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;  /*makes it circular*/
+    margin-right: 20px;
+}
+
+/* This controls vertical stacking */
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* removes flex gap */
+}
+
+/* Brand name */
+.brand {										/*Headline of Mai Construction*/
+    font-size: 24px;
+    margin: 0px;
+}
+
+/* Tagline (IMPORTANT PART) */
+.tagline {
+    margin: 0;          /* REMOVE gap */
+    padding: 0;         /* safety */
+    font-size: 16px;
+    color: #ffc107; /* yellow like your reference */
+    font-weight: 500;
+}
+/* Navigation links */
+.nav-links {									/* Navigation bar for sub headline...links of headlines*/
+    list-style: none;
+    display: flex;
+    justify-content: right;
+   	margin: 0;
+    padding: 0;
+    gap: 50px;
+}
+.nav-links  a {									/* Sub headline text Styles */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;	
+}
+
+.nav-links  a:hover {							/* To translate color of sub headline*/
+    color: #ffc107; /* yellow highlight on hover */
+}
+
+					/* Retaining Wall Construction */	
+
+.service-block {						/* whole service section */
+    padding: 40px;						/* Content does not touch screen edges */
+    text-align: center;				/* Centers heading, text, and images */
+    margin: -55px 0;	
+}
+

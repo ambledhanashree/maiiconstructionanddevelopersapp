@@ -1,0 +1,136 @@
+@charset "ISO-8859-1";
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;					/* 2 lines */
+    background-image:
+        linear-gradient(
+        rgba(30, 58, 95, 0.85),
+        rgba(30, 58, 95, 0.85)
+    ),
+    url('/images/background.jpg');
+
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar {									/* background image */
+    background: rgba(15, 23, 42, 0.95); /* same as home feel */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    backdrop-filter: blur(6px); /* modern glass effect */
+    
+}
+
+.symbol {
+    display: flex;
+    align-items: center;
+}
+.symbol-container {
+    background-image: url('/images/logo.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: left;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;  /*makes it circular*/
+    margin-right: 20px;
+}
+
+/* This controls vertical stacking */
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* removes flex gap */
+}
+
+/* Brand name */
+.brand {										/*Headline of Mai Construction*/
+    font-size: 24px;
+    margin: 0px;
+}
+
+/* Tagline (IMPORTANT PART) */
+.tagline {
+    margin: 0;          /* REMOVE gap */
+    padding: 0;         /* safety */
+    font-size: 16px;
+    color: #ffc107; /* yellow like your reference */
+    font-weight: 500;
+}
+/* Navigation links */
+.nav-links {									/* Navigation bar for sub headline...links of headlines*/
+    list-style: none;
+    display: flex;
+    justify-content: right;
+   	margin: 0;
+    padding: 0;
+    gap: 50px;
+}
+.nav-links  a {									/* Sub headline text Styles */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;	
+}
+
+.nav-links  a:hover {							/* To translate color of sub headline*/
+    color: #ffc107; /* yellow highlight on hover */
+}
+.project-block {						/* whole service section */
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    
+}
+.project-pic {						/* controls how images are arranged*/
+    display: flex;						/* Places images in a row instead of column */
+    gap: 0px;							/* Adds space between images */
+    justify-content: center;			/* add all images in centers */
+    flex-wrap: wrap;					/* Makes images move to next line on small screens..Very important for mobile view */
+}
+.project-pic img {					/* styles each service image. */
+    width: 300px;							/* width of images */
+    height: 230px;							/* height for images */
+    object-fit: cover;						/* Crops image  */
+    border-radius: 10px;					/* rounded corners */
+    margin: 10px;							/*GAP between image and above text and gap between the two images */
+    transition: transform 0.3s ease;
+}
+.project-pic img:hover {
+    transform: scale(1.05);
+}
+
+.flex-break {
+    flex-basis: 100%;
+   	margin-top: 0px;   /* space above heading */
+    
+}
+
+h2 {
+	font-size: 25px;
+    color: #ffc107;
+    text-align: center;
+    margin: 30px 0 20px;  /* give gap between below img and above heading */
+}
+.project-pic p {
+    width: 100%; 
+    text-align: center; 
+    font-size: 18px; 
+    font-weight: 600; 
+    color: #e5e7eb; 
+    margin-top: 25px; /* gap from above images */ 
+    margin-bottom: 15px; /* gap before next images */
+}
+.tight-text {
+    margin-top: 5px !important;   /* reduce only this gap */
+}
+

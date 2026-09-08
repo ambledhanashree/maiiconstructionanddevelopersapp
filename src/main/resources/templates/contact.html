@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Contact</title>
+<link rel="stylesheet" type="text/css" th:href="@{/contact.css}">
+</head>
+<body>
+	<header class="navbar">
+		<div class="symbol">
+	        <div class="symbol-container"></div>
+	        	<div class="brand-text">
+					 <h1 class="brand">Maii Construction and Developers</h1>
+					      <p class="tagline">Structural Engineering</p>
+				</div>
+	     </div>
+	     <nav>
+			 <ul class="nav-links">
+			 	<a href="/home">Home</a>
+			 	<a href="/openAbout">About</a>
+			 	<a href="/contact">Contact</a>
+				<a href="/openProject">Projects</a>
+				<a href="/openService">Services</a>
+				<a href="/admin-message">Admin Messages</a>
+			 </ul>
+	      </nav>
+	            	
+	        
+        
+    </header>
+    <div class="contact-section">
+    	<div class="contact-Details">
+    			<div class="contact-row">
+				    <img src="/images/phone.png" alt="Phone Icon">
+				    <div class="contact-text">
+				       <span class="label">Call Us :</span>
+					        <div class="phone-list">
+					            <span class="phone-number">+91-9845860403</span>
+					            <span class="phone-number">+91-8904431617</span>
+					        </div>
+				        
+				    </div>
+				</div>
+				
+				<div class="contact-row">
+				    <img src="/images/clock.png" alt="Clock Icon">
+				    <div class="contact-text">
+				    	<span class="label">Our Timing :</span>
+    					<span class="timing">Mon - Sun: 9 AM - 9 PM</span>
+				        
+				    </div>
+				</div>
+    	</div>
+		<div class="form-container">
+			     <h2>Contact Us</h2>
+			     <div class="warning-container">
+				     <div class="warning-message">
+					    <strong>Important Notice:</strong><br>
+							    Please provide genuine and correct information.
+							    If any fraudulent, fake, or misleading details are found 
+							    your number/email may be permanently blocked.
+					</div>
+				</div>
+				  <div>
+				  	<form th:action="@{/contact}" th:object="${contactMessage}" method="post">
+				  		<input type="text" th:field="*{name}" placeholder="Full Name" required />
+				        <br>
+				        <input type="text" th:field="*{phoneNumber}" placeholder="Phone No" required />
+				        <br>
+				        <input type="email" th:field="*{email}" placeholder="Email ID" required />
+				        <br>
+				        <textarea th:field="*{message}" placeholder="Message" rows="1" required></textarea>
+				        <br>
+				        <button type="submit">Send Message</button>
+				    </form>
+				    <p th:if="${success}" th:text="${success}"  class="success"></p>
+				   </div>
+		</div>
+		
+	</div>
+    
+    
+</body>
+</html>

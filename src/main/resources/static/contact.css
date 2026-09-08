@@ -1,0 +1,224 @@
+@charset "ISO-8859-1";
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image:
+        linear-gradient(
+             rgba(30, 58, 95, 0.85),
+            rgba(30, 58, 95, 0.85)
+        ),
+        url('/images/background.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+
+.navbar {									/* background image */
+     background: rgba(15, 23, 42, 0.95); /* same as home feel */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    backdrop-filter: blur(6px); /* modern glass effect */
+    position: sticky;   /* ADD THIS */
+    top: 0;             /* ADD THIS */
+    z-index: 1000;
+    
+    
+}
+
+.symbol {
+    display: flex;
+    align-items: center;
+}
+.symbol-container {
+    background-image: url('/images/logo.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: left;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;  /*makes it circular*/
+    margin-right: 20px;
+}
+
+/* This controls vertical stacking */
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* removes flex gap */
+}
+
+/* Brand name */
+.brand {										/*Headline of Mai Construction*/
+    font-size: 24px;
+    margin: 0px;
+}
+
+/* Tagline (IMPORTANT PART) */
+.tagline {
+    margin: 0;          /* REMOVE gap */
+    padding: 0;         /* safety */
+    font-size: 16px;
+    color: #ffc107; /* yellow like your reference */
+    font-weight: 500;
+}
+
+/* Navigation links */
+.nav-links {									/* Navigation bar for sub headline...links of headlines*/
+    list-style: none;
+    display: flex;
+    justify-content: right;
+   	margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.nav-links  a {									/* Sub headline text Styles */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links  a:hover {							/* To translate color of sub headline*/
+    color: #ffc107; /* yellow highlight on hover */
+}
+.contact-section {									/* For two lines seperately means phone and clock */
+    background-color: transparent;
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+   
+    padding: 10px 80px;
+    
+    
+}
+.form-container {
+    width: 40%;
+    margin: 15px 120px 15px auto;	/* The from will be in right*/	/*margin: 15px auto;-The Form will be in the center */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.form-container h2 {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap; /* keeps it in one line */
+}
+
+.warning-container {
+    width: 100%;
+    margin: 15px 40px 15px auto;	/* The from will be in right*/	/*margin: 15px auto;-The Form will be in the center */
+    background: rgba(255, 193, 7, 0.15);
+    color: #e5e7eb;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    border-left: 4px solid #ffc107;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 13px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;        /* removes black border */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+button {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);;
+}
+.success {
+    color:  #710000;
+    margin-top: 10px;
+    font-weight: bold;
+}
+h2 {				/*for admin text*/
+	color:#ffc107;
+	 margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.contact-Details {									/* For two lines seperately means phone and clock */
+   background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column; /*two rows vertically one row phone second row clock*/
+    padding: 60px 60px;	/*first for Up and down text and second for left and right text */
+    gap:10px;	/*gap between two text */
+    
+}
+h4 {
+	font-size: 1.2em;
+    color: #333;
+}
+.contact-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+           
+            
+            
+            
+}
+
+.contact-row img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+}
+.contact-text {
+            font-size: 1.2em;
+            color: #e5e7eb;;
+            display: flex;
+		    align-items: flex-start;
+		    gap: 10px;
+		    flex-direction: column;   /* makes next line */
+}
+.label {
+    font-weight: bold;
+}
+
+.timing {
+    color: #ffc107;
+}
+.phone-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-number{
+    color: #ffc107;;
+    display:block;
+    font-weight:540;
+}
+
+
